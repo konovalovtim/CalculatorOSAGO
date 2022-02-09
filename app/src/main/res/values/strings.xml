@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Calculator OSAGO</string>
+    <string name="title">Калькулятор ОСАГО</string>
+    <string name="city">Город регистрации\nсобственника</string>
+    <string name="drivers">Сколько водителей</string>
+    <string name="youngestDriver">Возраст младшего из водителей</string>
+    <string name="minExperience">Минимальный стаж водителей</string>
+    <string name="yearsWithoutAccident">Сколько лет не было аварий</string>
+    <string name="carHp">Мощность автомобиля</string>
+    <string name="button_string">Рассчитать ОСАГО</string>
+    <string name="coefficient_text">Ваши коэффициенты</string>
+    <string name="base">БТ</string>
+    <string name="coefficientPower">КМ</string>
+    <string name="coefficientLocal">КТ</string>
+    <string name="coefficientAccident">КБМ</string>
+    <string name="coefficientLimit">КО</string>
+    <string name="coefficientAge">КВС</string>
+    <string name="x">×</string>
+
+</resources>

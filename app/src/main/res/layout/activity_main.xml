@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07000000"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/bottom_layout"
+            android:paddingBottom="120dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-black"
+                android:includeFontPadding="true"
+                android:text="@string/title"
+                android:textColor="@color/black"
+                android:textSize="33sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RelativeLayout
+
+                android:id="@+id/coefficient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:onClick="setCoefficients"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/forms"
+                app:layout_constraintTop_toBottomOf="@+id/title">
+
+                <ImageView
+                    android:id="@+id/coefficient_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/coefficients" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@drawable/avatar" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="75dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/coefficient_text" />
+
+                <TextView
+                    android:id="@+id/coefficient_text"
+                    android:layout_width="250dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="75dp"
+                    android:layout_marginTop="37dp" />
+
+                <ImageButton
+                    android:id="@+id/drop_button"
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/drop" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/forms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/coefficient">
+
+                <ImageView
+                    android:id="@+id/formImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="470dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/form" />
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="23dp"
+                    android:background="@drawable/shape_city"
+                    android:text="@string/city"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/carHP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="97dp"
+                    android:layout_marginEnd="23dp"
+                    android:background="@drawable/shape"
+                    android:text="@string/carHp"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/drivers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="169dp"
+                    android:layout_marginEnd="23dp"
+                    android:background="@drawable/shape"
+                    android:text="@string/drivers"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/youngestDriver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="241dp"
+                    android:layout_marginEnd="23dp"
+                    android:background="@drawable/shape"
+                    android:text="@string/youngestDriver"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/minExperience"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="313dp"
+                    android:layout_marginEnd="23dp"
+                    android:background="@drawable/shape"
+                    android:text="@string/minExperience"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/yearsWithoutAccident"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="385dp"
+                    android:layout_marginEnd="23dp"
+                    android:background="@drawable/shape"
+                    android:text="@string/yearsWithoutAccident"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/button_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/background" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/button_main_shape"
+            android:text="@string/button_string"
+            android:textColor="#55000000" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
