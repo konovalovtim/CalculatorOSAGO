@@ -33,58 +33,18 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <RelativeLayout
-
-                android:id="@+id/coefficient"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
                 android:layout_marginStart="14dp"
                 android:layout_marginEnd="14dp"
-                android:onClick="setCoefficients"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="25dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 app:layout_constraintBottom_toTopOf="@+id/forms"
-                app:layout_constraintTop_toBottomOf="@+id/title">
-
-                <ImageView
-                    android:id="@+id/coefficient_image"
-                    android:layout_width="match_parent"
-                    android:layout_height="80dp"
-                    android:scaleType="fitXY"
-                    app:srcCompat="@drawable/coefficients" />
-
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="15dp"
-                    app:srcCompat="@drawable/avatar" />
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="20dp"
-                    android:layout_marginStart="75dp"
-                    android:layout_marginTop="15dp"
-                    android:text="@string/coefficient_text" />
-
-                <TextView
-                    android:id="@+id/coefficient_text"
-                    android:layout_width="250dp"
-                    android:layout_height="22dp"
-                    android:layout_marginStart="75dp"
-                    android:layout_marginTop="37dp" />
-
-                <ImageButton
-                    android:id="@+id/drop_button"
-                    android:layout_width="20dp"
-                    android:layout_height="10dp"
-                    android:layout_marginTop="35dp"
-                    android:layout_marginEnd="35dp"
-                    android:layout_alignParentEnd="true"
-                    android:background="@drawable/drop" />
-
-            </RelativeLayout>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title" />
 
             <RelativeLayout
                 android:id="@+id/forms"
@@ -95,7 +55,7 @@
                 android:layout_marginTop="25dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/coefficient">
+                app:layout_constraintTop_toBottomOf="@+id/rv_list">
 
                 <ImageView
                     android:id="@+id/formImage"
@@ -103,6 +63,7 @@
                     android:layout_height="470dp"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/form" />
+
                 <TextView
                     android:id="@+id/city"
                     android:layout_width="match_parent"

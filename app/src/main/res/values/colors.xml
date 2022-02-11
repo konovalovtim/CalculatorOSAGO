@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="coefficient_color">#00AFFF</color>
+    <color name="x">#B4BAC3</color>
+    <color name="base">#00afff</color>
 </resources>
