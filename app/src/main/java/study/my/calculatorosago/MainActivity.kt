@@ -25,7 +25,9 @@ class MainActivity : AppCompatActivity() {
         super.onDestroy()
         _binding = null
     }
-
+/*
+создание recyclerview
+ */
     private fun createRecyclerView() {
         binding.rvList.layoutManager = LinearLayoutManager(this@MainActivity)
         rvAdapter = RvAdapter(coefficientList)
