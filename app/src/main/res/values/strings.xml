@@ -9,9 +9,11 @@
     <string name="carHp">Мощность автомобиля</string>
     <string name="button_string">Рассчитать ОСАГО</string>
     <string name="coefficient_text">Ваши коэффициенты</string>
+    <string name="base">БТ</string>
     <string name="base_text">Устанавливает страховая компания</string>
     <string name="base_title">(базовый тариф)</string>
     <string name="r">₽</string>
+    <string name="x">×</string>
     <string name="power">КМ</string>
     <string name="power_text">Чем мощнее автомобиль, тем дороже страховой полис</string>
     <string name="power_title">(коэфф. мощности)</string>

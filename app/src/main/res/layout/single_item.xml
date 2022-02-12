@@ -23,14 +23,152 @@
         android:layout_marginTop="10dp"
         android:textSize="15sp"
         android:text="@string/coefficient_text" />
-
-    <TextView
-        android:id="@+id/coefficients"
-        android:layout_width="250dp"
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
         android:layout_height="22dp"
         android:layout_marginStart="75dp"
-        android:layout_marginTop="32dp"
-        android:text=""/>
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:id="@+id/baseRv"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:textColor="@color/coefficients"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/x1"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/x1"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="@string/x"
+            android:textColor="@color/x"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/powerRv"
+            app:layout_constraintStart_toEndOf="@+id/baseRv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/powerRv"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:textColor="@color/coefficients"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/x2"
+            app:layout_constraintStart_toEndOf="@+id/x1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/x2"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="@string/x"
+            android:textColor="@color/x"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/localRv"
+            app:layout_constraintStart_toEndOf="@+id/powerRv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/localRv"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:textColor="@color/coefficients"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/x3"
+            app:layout_constraintStart_toEndOf="@+id/x2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/x3"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="@string/x"
+            android:textColor="@color/x"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/demageRv"
+            app:layout_constraintStart_toEndOf="@+id/localRv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/demageRv"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:textColor="@color/coefficients"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/x4"
+            app:layout_constraintStart_toEndOf="@+id/x3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/x4"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="@string/x"
+            android:textColor="@color/x"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/limitRv"
+            app:layout_constraintStart_toEndOf="@+id/demageRv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/limitRv"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:textColor="@color/coefficients"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/x5"
+            app:layout_constraintStart_toEndOf="@+id/x4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/x5"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="@string/x"
+            android:textColor="@color/x"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ageRv"
+            app:layout_constraintStart_toEndOf="@+id/limitRv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ageRv"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:textColor="@color/coefficients"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/x5"
+            app:layout_constraintTop_toTopOf="parent" />
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <ImageView
         android:id="@+id/drop_image"
@@ -74,7 +212,7 @@
             android:textSize="16sp" />
 
         <TextView
-            android:id="@+id/tv_description"
+            android:id="@+id/base"
             android:layout_width="130dp"
             android:layout_height="30dp"
             android:layout_alignParentEnd="true"

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/repo-14.iml" filepath="$PROJECT_DIR$/.idea/repo-14.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CalculatorOSAGO.iml" filepath="$PROJECT_DIR$/.idea/modules/CalculatorOSAGO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CalculatorOSAGO.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CalculatorOSAGO.app.iml" />
     </modules>
   </component>
 </project>

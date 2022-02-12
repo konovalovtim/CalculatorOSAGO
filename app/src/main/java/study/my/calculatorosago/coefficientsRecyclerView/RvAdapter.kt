@@ -1,8 +1,5 @@
 package study.my.calculatorosago.coefficientsRecyclerView
 
-import android.graphics.Color
-import android.graphics.Typeface
-import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -23,23 +20,25 @@ class RvAdapter(private var coefficientsItemList: List<CoefficientsItem>) : Recy
         with(holder){
             with(coefficientsItemList[position]){
 
-                binding.tvDescription.text = this.baseCoefficient
+                binding.baseRv.text = this.baseRv
+                binding.powerRv.text = this.powerRv
+                binding.localRv.text = this.localRv
+                binding.demageRv.text = this.demageRv
+                binding.limitRv.text = this.limitRv
+                binding.ageRv.text = this.ageRv
+                binding.base.text = this.baseCoefficient
                 binding.powerCoefficient.text = this.power
                 binding.localCoefficient.text = this.local
                 binding.demageCoefficient.text = this.demage
                 binding.ageCoefficient.text = this.age
                 binding.limitCoefficient.text = this.limit
-                binding.coefficients.text=coefficients
-                binding.coefficients.setTextColor(Color.parseColor("#00afff"))
-                binding.coefficients.setTypeface(null, Typeface.BOLD)
-                binding.coefficients.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 19F)
-
                 binding.expandedView.visibility = if (this.expand) View.VISIBLE else View.GONE
                 binding.cardLayout.setOnClickListener {
-                    if (this.expand)
-                        binding.dropImage.setImageResource(R.drawable.drop_reverse)
                     this.expand = !this.expand
                     notifyItemChanged(position)
+                    if (!this.expand) {
+                        binding.dropImage.setImageResource(R.drawable.drop_reverse)
+                    }
                 }
             }
         }

@@ -25,30 +25,36 @@ class MainActivity : AppCompatActivity() {
         super.onDestroy()
         _binding = null
     }
-/*
-создание recyclerview
- */
     private fun createRecyclerView() {
         binding.rvList.layoutManager = LinearLayoutManager(this@MainActivity)
         rvAdapter = RvAdapter(coefficientList)
         binding.rvList.adapter = rvAdapter
-        val x = "×"
-        val base = "БТ"
-        var coefficientPower = "КМ"
-        var coefficientLocal = "КТ"
-        var coefficientAccident = "КБМ"
-        var coefficientLimit = "КО"
-        var coefficientAge = "КВС"
+        val baseRV = "БТ"
+        var powerRV = "КМ"
+        var localRV = "КТ"
+        var demageRV = "КБМ"
+        var limitRV = "КО"
+        var ageRV = "КВС"
+        var base = "2754 - 4 432"
+        var power = "0,6 - 1,6"
+        var local = "0,64 - 1,99"
+        var demage = "0,5 - 2,45"
+        var age = "0,90 - 1,93"
+        var limit = "1 или 1,99"
 
         val coefficient1 = CoefficientsItem(
-            "2754 - 4 432",
-            "0,6 - 1,6",
-            "0,64 - 1,99",
-            "0,5 - 2,45",
-            "0,90 - 1,93",
-            "1 или 1,99",
-            base + x + coefficientPower + x + coefficientLocal + x +
-                    coefficientAccident + x + coefficientLimit + x + coefficientAge,
+            baseRV,
+            powerRV,
+            localRV,
+            demageRV,
+            limitRV,
+            ageRV,
+            base,
+            power,
+            local,
+            demage,
+            age,
+            limit,
             false
         )
         coefficientList.add(coefficient1)
