@@ -20,6 +20,8 @@ class RvAdapter(private var coefficientsItemList: List<CoefficientsItem>) : Recy
         with(holder){
             with(coefficientsItemList[position]){
 
+                if (this.expand)
+                    binding.dropImage.setImageResource(R.drawable.drop_reverse)
                 binding.baseRv.text = this.baseRv
                 binding.powerRv.text = this.powerRv
                 binding.localRv.text = this.localRv
@@ -36,9 +38,7 @@ class RvAdapter(private var coefficientsItemList: List<CoefficientsItem>) : Recy
                 binding.cardLayout.setOnClickListener {
                     this.expand = !this.expand
                     notifyItemChanged(position)
-                    if (!this.expand) {
-                        binding.dropImage.setImageResource(R.drawable.drop_reverse)
-                    }
+
                 }
             }
         }

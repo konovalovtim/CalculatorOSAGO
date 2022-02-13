@@ -24,14 +24,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/study/my/calculatorosago/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/study/my/calculatorosago/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/study/my/calculatorosago/coefficientsRecyclerView/CoefficientsItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/study/my/calculatorosago/coefficientsRecyclerView/CoefficientsItem.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/study/my/calculatorosago/coefficientsRecyclerView/RvAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/study/my/calculatorosago/coefficientsRecyclerView/RvAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/single_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/single_item.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <list id="8c3d43f6-1973-4d25-8cc5-f69069059247" name="initial commit" comment="" />
     <list id="9df1fd9f-77d7-4cda-bf4c-75d796f1b975" name="Revert &quot;initial commit&quot;" comment="Revert &quot;initial commit&quot;&#10;&#10;This reverts commit 04ed5a7d" />
