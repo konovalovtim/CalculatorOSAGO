@@ -3,9 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/single_item.xml" value="0.22777777777777777" />
+        <entry key="app/src/main/res/drawable/shape.xml" value="0.8625" />
+        <entry key="app/src/main/res/drawable/shape_city.xml" value="0.8625" />
+        <entry key="app/src/main/res/layout-large/activity_main.xml" value="0.5" />
+        <entry key="app/src/main/res/layout-large/single_item.xml" value="0.335" />
+        <entry key="app/src/main/res/layout-normal/activity_main.xml" value="0.2995110024449878" />
+        <entry key="app/src/main/res/layout-normal/single_item.xml" value="0.335" />
+        <entry key="app/src/main/res/layout-small/activity_main.xml" value="1.1534772182254196" />
+        <entry key="app/src/main/res/layout-small/single_item.xml" value="0.75" />
+        <entry key="app/src/main/res/layout-v26/single_item.xml" value="0.12760416666666666" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.12239583333333333" />
+        <entry key="app/src/main/res/layout/single_item.xml" value="0.165" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>

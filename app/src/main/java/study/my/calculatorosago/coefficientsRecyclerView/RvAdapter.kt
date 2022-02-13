@@ -38,7 +38,6 @@ class RvAdapter(private var coefficientsItemList: List<CoefficientsItem>) : Recy
                 binding.cardLayout.setOnClickListener {
                     this.expand = !this.expand
                     notifyItemChanged(position)
-
                 }
             }
         }
