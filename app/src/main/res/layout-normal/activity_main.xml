@@ -46,7 +46,7 @@
                 app:cardCornerRadius="16dp"
                 app:cardElevation="0dp"
                 app:contentPaddingBottom="10dp"
-                android:id="@+id/card_layout">
+                android:id="@+id/card_view">
 
                 <ImageView
                     android:layout_width="50dp"
@@ -219,7 +219,7 @@
                     android:background="@drawable/drop" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/expanded_view"
+                    android:id="@+id/expandable_view"
                     android:layout_width="match_parent"
                     android:layout_height="500dp"
                     android:layout_marginTop="80dp"
@@ -552,7 +552,7 @@
                 android:layout_marginTop="25dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/card_layout">
+                app:layout_constraintTop_toBottomOf="@+id/card_view">
 
                 <ImageView
                     android:id="@+id/formImage"

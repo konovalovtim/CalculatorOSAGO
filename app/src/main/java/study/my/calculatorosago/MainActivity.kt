@@ -54,12 +54,12 @@ class MainActivity : AppCompatActivity() {
         cardView=findViewById(R.id.card_view)
         dropImage?.setOnClickListener {
             val transition: Transition= AutoTransition().setDuration(100)
-            if(expandableView?.visibility==View.GONE) {
+            if(expandableView?.visibility == View.GONE) {
                 TransitionManager.beginDelayedTransition(cardView, transition)
-                expandableView?.visibility=View.VISIBLE
+                expandableView?.visibility = View.VISIBLE
                 dropImage?.setBackgroundResource(R.drawable.drop_reverse)
             } else {
-                expandableView?.visibility=View.GONE
+                expandableView?.visibility = View.GONE
                 dropImage?.setBackgroundResource(R.drawable.drop)
             }
         }
