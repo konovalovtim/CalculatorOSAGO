@@ -1,64 +1,75 @@
 package study.my.calculatorosago
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.recyclerview.widget.LinearLayoutManager
-import study.my.calculatorosago.coefficientsRecyclerView.CoefficientsItem
-import study.my.calculatorosago.coefficientsRecyclerView.RvAdapter
-import study.my.calculatorosago.databinding.ActivityMainBinding
+import android.transition.AutoTransition
+import android.transition.Transition
+import android.transition.TransitionManager
+import android.view.View
+import android.widget.EditText
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.cardview.widget.CardView
+import androidx.constraintlayout.widget.ConstraintLayout
+import com.google.android.material.bottomsheet.BottomSheetDialog
+
 
 class MainActivity : AppCompatActivity() {
-
-    private var _binding: ActivityMainBinding? = null
-    private val binding get() = _binding!!
-    private var coefficientList = ArrayList<CoefficientsItem>()
-    private lateinit var rvAdapter: RvAdapter
-
+    var expandableView: ConstraintLayout?=null
+    var dropImage: ImageView?=null
+    var cardView: CardView?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        _binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        createRecyclerView()
+        setContentView(R.layout.activity_main)
+        createExpandableView()
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        _binding = null
+    fun createExpandableView() {
+        val base = findViewById<TextView>(R.id.base)
+        val power = findViewById<TextView>(R.id.power)
+        val local = findViewById<TextView>(R.id.local)
+        val demage = findViewById<TextView>(R.id.demage)
+        val limit = findViewById<TextView>(R.id.limit)
+        val age = findViewById<TextView>(R.id.age)
+        val baseCoefficient = findViewById<TextView>(R.id.base_coefficient)
+        val powerCoefficient = findViewById<TextView>(R.id.power_coefficient)
+        val localCoefficient = findViewById<TextView>(R.id.local_coefficient)
+        val demageCoefficient = findViewById<TextView>(R.id.demage_coefficient)
+        val ageCoefficient = findViewById<TextView>(R.id.age_coefficient)
+        val limitCoefficient = findViewById<TextView>(R.id.limit_coefficient)
+        base.text = "БТ"
+        power.text = "КМ"
+        local.text = "КТ"
+        demage.text = "КБМ"
+        limit.text = "КО"
+        age.text = "КВС"
+        baseCoefficient.text = "2 754 - 4 432"
+        powerCoefficient.text = "0,6 - 1,6"
+        localCoefficient.text = "0,64 - 1,99"
+        demageCoefficient.text = "0,5 - 2,45"
+        ageCoefficient.text = "0,90 - 1,93"
+        limitCoefficient.text = "1 или 1,99"
+        expandableView=findViewById(R.id.expandable_view)
+        dropImage=findViewById(R.id.drop_image)
+        cardView=findViewById(R.id.card_view)
+        dropImage?.setOnClickListener {
+            val transition: Transition= AutoTransition().setDuration(100)
+            if(expandableView?.visibility==View.GONE) {
+                TransitionManager.beginDelayedTransition(cardView, transition)
+                expandableView?.visibility=View.VISIBLE
+                dropImage?.setBackgroundResource(R.drawable.drop_reverse)
+            } else {
+                expandableView?.visibility=View.GONE
+                dropImage?.setBackgroundResource(R.drawable.drop)
+            }
+        }
     }
-    private fun createRecyclerView() {
-        binding.rvList.layoutManager = LinearLayoutManager(this@MainActivity)
-        rvAdapter = RvAdapter(coefficientList)
-        binding.rvList.adapter = rvAdapter
-        val baseRV = "БТ"
-        var powerRV = "КМ"
-        var localRV = "КТ"
-        var demageRV = "КБМ"
-        var limitRV = "КО"
-        var ageRV = "КВС"
-        var base = "2754 - 4 432"
-        var power = "0,6 - 1,6"
-        var local = "0,64 - 1,99"
-        var demage = "0,5 - 2,45"
-        var age = "0,90 - 1,93"
-        var limit = "1 или 1,99"
 
-        val coefficient1 = CoefficientsItem(
-            baseRV,
-            powerRV,
-            localRV,
-            demageRV,
-            limitRV,
-            ageRV,
-            base,
-            power,
-            local,
-            demage,
-            age,
-            limit,
-            false
-        )
-        coefficientList.add(coefficient1)
-        rvAdapter.notifyItemChanged(0)
+    fun createCityDialog(view: View) {
+        val dialog = layoutInflater.inflate(R.layout.dialog_city, null, false)
+        val editText = dialog.findViewById<EditText>(R.id.enter)
+        val dialogBuilder = BottomSheetDialog(this)
+        dialogBuilder.setContentView(dialog)
+        dialogBuilder.show()
     }
-
 }

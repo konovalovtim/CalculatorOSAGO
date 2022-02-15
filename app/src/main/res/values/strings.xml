@@ -10,24 +10,26 @@
     <string name="button_string">Рассчитать ОСАГО</string>
     <string name="coefficient_text">Ваши коэффициенты</string>
     <string name="base">БТ</string>
-    <string name="base_text">Устанавливает страховая компания</string>
+    <string name="base_text">Устанавливает страховая\nкомпания</string>
     <string name="base_title">(базовый тариф)</string>
     <string name="r">₽</string>
     <string name="x">×</string>
     <string name="power">КМ</string>
-    <string name="power_text">Чем мощнее автомобиль, тем дороже страховой полис</string>
+    <string name="power_text">Чем мощнее автомобиль,\nтем дороже страховой полис</string>
     <string name="power_title">(коэфф. мощности)</string>
     <string name="local">КТ</string>
-    <string name="local_text">Определяется по прописке собственника автомобиля</string>
+    <string name="local_text">Определяется по прописк\nсобственника автомобиля</string>
     <string name="local_title">(территориальный коэфф.)</string>
     <string name="demage">КБМ</string>
-    <string name="demage_text">Учитывается только самый высокий коэффициент из всех водителей</string>
+    <string name="demage_text">Учитывается только самы\nвысокий коэффициент из всех\nводителей</string>
     <string name="demage_title">(коэфф. безаварийности)</string>
     <string name="age">КВС</string>
-    <string name="age_text">Чем больше возраст и стаж у вписанного в полис водителя, тем дешевле будет полис</string>
+    <string name="age_text">Чем больше возраст и стаж\nу вписанного в полис водителя,\nтем дешевле будет полис</string>
     <string name="age_title">(коэфф. возраст/стаж)</string>
     <string name="limit">КО</string>
-    <string name="limit_text">Полис с ограниченным списком водителей будет стоить дешевле</string>
+    <string name="limit_text">Полис с ограниченным списком\nводителей будет стоить дешевле</string>
     <string name="limit_title">(коэфф. ограничений)</string>
+    <string name="add_city">Введите город</string>
+    <string name="bottom_text">Далее  ></string>
 
 </resources>

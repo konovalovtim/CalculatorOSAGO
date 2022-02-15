@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="x">#B4BAC3</color>
     <color name="coefficients">#00afff</color>
+    <color name="transparent">@android:color/transparent</color>
 </resources>
