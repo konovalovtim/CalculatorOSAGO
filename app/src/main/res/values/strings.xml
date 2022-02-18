@@ -1,11 +1,12 @@
 <resources>
-    <string name="app_name">Calculator OSAGO</string>
+    <string name="app_name">Calculator OSAGO/repo-14</string>
     <string name="title">Калькулятор ОСАГО</string>
     <string name="city">Город регистрации\nсобственника</string>
     <string name="drivers">Сколько водителей</string>
+    <string name="driversTitle">Количество водителей</string>
     <string name="youngestDriver">Возраст младшего из водителей</string>
     <string name="minExperience">Минимальный стаж водителей</string>
-    <string name="yearsWithoutAccident">Сколько лет не было аварий</string>
+    <string name="yearsNoAccident">Сколько лет не было аварий</string>
     <string name="carHp">Мощность автомобиля</string>
     <string name="button_string">Рассчитать ОСАГО</string>
     <string name="coefficient_text">Ваши коэффициенты</string>
@@ -30,6 +31,12 @@
     <string name="limit_text">Полис с ограниченным списком\nводителей будет стоить дешевле</string>
     <string name="limit_title">(коэфф. ограничений)</string>
     <string name="add_city">Введите город</string>
-    <string name="bottom_text">Далее  ></string>
+    <string name="add_power">Введите мощность автомобиля </string>
+    <string name="add_drivers">Введите количество водителей</string>
+    <string name="add_youngest_driver">Введите возраст младшего из водителей</string>
+    <string name="add_min_experience">Введите минимальный стаж водителей</string>
+    <string name="add_years_no_accidents">Введите количество лет без аварий</string>
+    <string name="button_text">Далее</string>
+    <string name="button_final_text">Подтвердить</string>
 
 </resources>

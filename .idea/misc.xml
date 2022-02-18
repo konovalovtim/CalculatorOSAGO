@@ -3,22 +3,35 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/back_button_vector.xml" value="0.2188034188034188" />
+        <entry key="app/src/main/res/drawable/back_vector.xml" value="0.2188034188034188" />
+        <entry key="app/src/main/res/drawable/button_main_shape.xml" value="0.2188034188034188" />
+        <entry key="app/src/main/res/drawable/button_shape.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/button_vector.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/edittext_shape.xml" value="0.31145833333333334" />
-        <entry key="app/src/main/res/drawable/shape.xml" value="0.8625" />
-        <entry key="app/src/main/res/drawable/shape_city.xml" value="0.8625" />
+        <entry key="app/src/main/res/drawable/ic_shape.xml" value="0.26666666666666666" />
+        <entry key="app/src/main/res/drawable/shape.xml" value="0.11595770976974115" />
+        <entry key="app/src/main/res/drawable/shape_button.xml" value="0.2188034188034188" />
+        <entry key="app/src/main/res/drawable/shape_city.xml" value="0.125" />
         <entry key="app/src/main/res/drawable/shape_dialog.xml" value="0.31145833333333334" />
-        <entry key="app/src/main/res/drawable/vector_city_button.xml" value="0.16822916666666668" />
+        <entry key="app/src/main/res/drawable/vector_button.xml" value="0.25" />
+        <entry key="app/src/main/res/drawable/vector_city_button.xml" value="0.25" />
         <entry key="app/src/main/res/drawable/vector_dialog.xml" value="0.16822916666666668" />
-        <entry key="app/src/main/res/drawable/vector_drop.xml" value="0.16979166666666667" />
+        <entry key="app/src/main/res/drawable/vector_drop.xml" value="0.165" />
         <entry key="app/src/main/res/layout-large/activity_main.xml" value="0.5" />
         <entry key="app/src/main/res/layout-large/single_item.xml" value="0.335" />
-        <entry key="app/src/main/res/layout-normal/activity_main.xml" value="0.375" />
+        <entry key="app/src/main/res/layout-normal/activity_main.xml" value="0.28132118451025057" />
         <entry key="app/src/main/res/layout-normal/single_item.xml" value="0.335" />
-        <entry key="app/src/main/res/layout-small/activity_main.xml" value="0.8394415357766143" />
+        <entry key="app/src/main/res/layout-small/activity_main.xml" value="0.5135135135135135" />
         <entry key="app/src/main/res/layout-small/single_item.xml" value="0.75" />
         <entry key="app/src/main/res/layout-v26/single_item.xml" value="0.12760416666666666" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.26570458404074704" />
-        <entry key="app/src/main/res/layout/dialog_city.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/dialog_city.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/dialog_drivers.xml" value="0.45" />
+        <entry key="app/src/main/res/layout/dialog_min_experience.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/dialog_power.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/dialog_years_no_accidents.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/dialog_youngest_driver.xml" value="0.25" />
         <entry key="app/src/main/res/layout/item.xml" value="0.25" />
         <entry key="app/src/main/res/layout/single_item.xml" value="0.335" />
       </map>

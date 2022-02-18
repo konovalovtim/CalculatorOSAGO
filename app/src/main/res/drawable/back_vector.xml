@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="48.5dp"
+    android:height="48.5dp"
+    android:viewportWidth="48.5"
+    android:viewportHeight="48.5"
+    >
+
+    <group>
+
+        <clip-path
+            android:pathData="M12.25 0.25H36.25C42.8774 0.25 48.25 5.62258 48.25 12.25V36.25C48.25 42.8774 42.8774 48.25 36.25 48.25H12.25C5.62258 48.25 0.25 42.8774 0.25 36.25V12.25C0.25 5.62258 5.62258 0.25 12.25 0.25Z"
+            />
+
+        <path
+            android:pathData="M0.25 0.25V48.25H48.25V0.25"
+            android:fillColor="#FFFFFF"
+            />
+
+    </group>
+
+    <path
+        android:pathData="M12.25 0.25H36.25C42.8774 0.25 48.25 5.62258 48.25 12.25V36.25C48.25 42.8774 42.8774 48.25 36.25 48.25H12.25C5.62258 48.25 0.25 42.8774 0.25 36.25V12.25C0.25 5.62258 5.62258 0.25 12.25 0.25Z"
+        android:strokeWidth="0.5"
+        android:strokeColor="#D8E4EB"
+        />
+
+</vector>

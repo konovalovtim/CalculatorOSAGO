@@ -629,7 +629,7 @@
                     android:layout_marginTop="385dp"
                     android:layout_marginEnd="23dp"
                     android:background="@drawable/shape"
-                    android:text="@string/yearsWithoutAccident"
+                    android:text="@string/yearsNoAccident"
                     android:textSize="14sp" />
             </RelativeLayout>
 

@@ -580,6 +580,7 @@
                     android:layout_marginStart="23dp"
                     android:layout_marginTop="97dp"
                     android:layout_marginEnd="23dp"
+                    android:onClick="createPowerDialog"
                     android:background="@drawable/shape"
                     android:text="@string/carHp"
                     android:textSize="15sp" />
@@ -591,6 +592,7 @@
                     android:layout_marginStart="23dp"
                     android:layout_marginTop="169dp"
                     android:layout_marginEnd="23dp"
+                    android:onClick="createDriversDialog"
                     android:background="@drawable/shape"
                     android:text="@string/drivers"
                     android:textSize="15sp" />
@@ -602,6 +604,7 @@
                     android:layout_marginStart="23dp"
                     android:layout_marginTop="241dp"
                     android:layout_marginEnd="23dp"
+                    android:onClick="createYoungestDriverDialog"
                     android:background="@drawable/shape"
                     android:text="@string/youngestDriver"
                     android:textSize="15sp" />
@@ -613,6 +616,7 @@
                     android:layout_marginStart="23dp"
                     android:layout_marginTop="313dp"
                     android:layout_marginEnd="23dp"
+                    android:onClick="createMinExperienceDialog"
                     android:background="@drawable/shape"
                     android:text="@string/minExperience"
                     android:textSize="15sp" />
@@ -624,8 +628,9 @@
                     android:layout_marginStart="23dp"
                     android:layout_marginTop="385dp"
                     android:layout_marginEnd="23dp"
+                    android:onClick="createYearsNoAccidentsDialog"
                     android:background="@drawable/shape"
-                    android:text="@string/yearsWithoutAccident"
+                    android:text="@string/yearsNoAccident"
                     android:textSize="15sp" />
             </RelativeLayout>
 
