@@ -274,24 +274,11 @@
                         android:textColor="@color/black"
                         android:textSize="22sp"
                         android:textStyle="bold"
-                        android:layout_marginTop="30dp"
-                        app:layout_constraintEnd_toStartOf="@id/r"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/r"
-                        android:layout_width="0dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_marginTop="30dp"
-                        android:gravity="top"
-                        android:text="@string/r"
                         android:layout_marginEnd="14dp"
-                        android:textColor="@color/black"
-                        android:textSize="22sp"
-                        android:textStyle="bold"
+                        android:layout_marginTop="30dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
+
 
                     <TextView
                         android:id="@+id/powerCo"
@@ -572,9 +559,9 @@
                     android:layout_marginStart="23dp"
                     android:layout_marginTop="25dp"
                     android:layout_marginEnd="23dp"
-                    android:background="@drawable/shape_city"
+                    android:background="@drawable/shape"
                     android:onClick="createCityDialog"
-                    android:text=""
+                    android:text="@string/city"
                     android:textSize="18sp" />
 
                 <TextView

@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity() {
         cardView=findViewById(R.id.card_view)
 
         setCoefficients("БТ", "КМ", "КТ","КБМ", "КО", "КВС")
-        setExpandableCoefficients("2 754 - 4 432", "0,6 - 1,6", "0,64 - 1,99",
+        setExpandableCoefficients("2 754 - 4 432 ₽", "0,6 - 1,6", "0,64 - 1,99",
             "0,5 - 2,45", "0,90 - 1,93", "1 или 1,99")
 
         dropImage?.setOnClickListener {
@@ -150,7 +150,7 @@ class MainActivity : AppCompatActivity() {
         buttonPower.setOnClickListener {
             dialogBuilder.dismiss()
             createDriversDialog(view)
-            formPower.text = editTextPower.text.toString() + " л.с."
+            formPower.text = editTextPower.text
             formPower.typeface=Typeface.DEFAULT_BOLD
             formPower.setTextColor(getColor(R.color.black))
         }
@@ -254,8 +254,6 @@ class MainActivity : AppCompatActivity() {
 
     fun setDialogView(dialogBuilder: BottomSheetDialog, dialog: View) {
         dialogBuilder.setContentView(dialog)
-        dialogBuilder.window?.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN)
-        dialogBuilder.behavior.peekHeight = 3000
         dialogBuilder.show()
         dialogBuilder.setOnDismissListener {
             getAllFactorList()

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Calculator OSAGO/repo-14</string>
     <string name="title">Калькулятор ОСАГО</string>
-    <string name="city">Город регистрации\nсобственника</string>
+    <string name="city">Город регистрации собственника</string>
     <string name="drivers">Сколько водителей</string>
     <string name="driversTitle">Количество водителей</string>
     <string name="youngestDriver">Возраст младшего из водителей</string>
