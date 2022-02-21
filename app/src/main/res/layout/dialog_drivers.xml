@@ -95,7 +95,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <RelativeLayout
-        android:id="@+id/back_button"
+        android:id="@+id/back_button_drivers"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:background="@drawable/back_vector"
@@ -110,8 +110,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="18dp"
-            android:background="@drawable/vector_back">
-        </ImageView>
+            android:background="@drawable/vector_back" />
 
 
     </RelativeLayout>

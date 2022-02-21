@@ -574,7 +574,7 @@
                     android:layout_marginEnd="23dp"
                     android:background="@drawable/shape_city"
                     android:onClick="createCityDialog"
-                    android:text="@string/city"
+                    android:text=""
                     android:textSize="14sp" />
 
                 <TextView
@@ -660,7 +660,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginEnd="15dp"
             android:background="@drawable/button_main_shape"
-            android:text="@string/button_string"
+            android:hint="@string/button_string"
             android:textColor="#55000000" />
 
     </RelativeLayout>

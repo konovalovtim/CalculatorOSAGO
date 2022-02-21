@@ -95,7 +95,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <RelativeLayout
-        android:id="@+id/back_button"
+        android:id="@+id/back_button_min_experience"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:background="@drawable/back_vector"

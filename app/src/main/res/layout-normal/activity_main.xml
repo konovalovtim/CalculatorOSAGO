@@ -661,7 +661,9 @@
             android:layout_marginTop="15dp"
             android:layout_marginEnd="15dp"
             android:background="@drawable/button_main_shape"
-            android:text="@string/button_string"
+            android:enabled="false"
+            android:textStyle="bold"
+            android:hint="@string/button_string"
             android:textColor="#55000000" />
 
     </RelativeLayout>

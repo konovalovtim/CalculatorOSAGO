@@ -574,7 +574,7 @@
                     android:layout_marginEnd="23dp"
                     android:background="@drawable/shape_city"
                     android:onClick="createCityDialog"
-                    android:text=""
+                    android:text="@string/city"
                     android:textSize="18sp" />
 
                 <TextView
@@ -584,8 +584,8 @@
                     android:layout_marginStart="23dp"
                     android:layout_marginTop="97dp"
                     android:layout_marginEnd="23dp"
-                    android:onClick="createPowerDialog"
                     android:background="@drawable/shape"
+                    android:onClick="createPowerDialog"
                     android:text="@string/carHp"
                     android:textSize="18sp" />
 
@@ -596,8 +596,8 @@
                     android:layout_marginStart="23dp"
                     android:layout_marginTop="169dp"
                     android:layout_marginEnd="23dp"
-                    android:onClick="createDriversDialog"
                     android:background="@drawable/shape"
+                    android:onClick="createDriversDialog"
                     android:text="@string/drivers"
                     android:textSize="18sp" />
 
@@ -608,8 +608,8 @@
                     android:layout_marginStart="23dp"
                     android:layout_marginTop="241dp"
                     android:layout_marginEnd="23dp"
-                    android:onClick="createYoungestDriverDialog"
                     android:background="@drawable/shape"
+                    android:onClick="createYoungestDriverDialog"
                     android:text="@string/youngestDriver"
                     android:textSize="18sp" />
 
@@ -620,8 +620,8 @@
                     android:layout_marginStart="23dp"
                     android:layout_marginTop="313dp"
                     android:layout_marginEnd="23dp"
-                    android:onClick="createMinExperienceDialog"
                     android:background="@drawable/shape"
+                    android:onClick="createMinExperienceDialog"
                     android:text="@string/minExperience"
                     android:textSize="18sp" />
 
@@ -632,8 +632,8 @@
                     android:layout_marginStart="23dp"
                     android:layout_marginTop="385dp"
                     android:layout_marginEnd="23dp"
-                    android:onClick="createYearsNoAccidentsDialog"
                     android:background="@drawable/shape"
+                    android:onClick="createYearsNoAccidentsDialog"
                     android:text="@string/yearsNoAccident"
                     android:textSize="18sp" />
             </RelativeLayout>
@@ -664,9 +664,10 @@
             android:layout_marginStart="15dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="15dp"
+            android:textStyle="bold"
             android:background="@drawable/button_main_shape"
-            android:text="@string/button_string"
-            android:textColor="#55000000" />
+            android:enabled="false"
+            android:hint="@string/button_string" />
 
     </RelativeLayout>
 
