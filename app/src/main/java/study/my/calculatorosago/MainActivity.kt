@@ -7,7 +7,6 @@ import android.transition.AutoTransition
 import android.transition.Transition
 import android.transition.TransitionManager
 import android.view.View
-import android.view.WindowManager
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
@@ -257,7 +256,6 @@ class MainActivity : AppCompatActivity() {
         dialogBuilder.show()
         dialogBuilder.setOnDismissListener {
             getAllFactorList()
-            window.clearFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE)
         }
     }
 }
