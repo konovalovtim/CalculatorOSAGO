@@ -38,5 +38,7 @@
     <string name="add_years_no_accidents">Введите количество лет без аварий</string>
     <string name="button_text">Далее</string>
     <string name="button_final_text">Подтвердить</string>
+    <string name="offers_button">Рассчитать точную цену и купить</string>
+    <string name="offers_title">Расчёт цены полиса</string>
 
 </resources>

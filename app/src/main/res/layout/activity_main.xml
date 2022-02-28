@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#07000000"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -60,7 +60,7 @@
                     android:layout_height="20dp"
                     android:layout_marginStart="75dp"
                     android:layout_marginTop="10dp"
-                    android:textSize="15sp"
+                    android:textSize="13sp"
                     android:text="@string/coefficient_text" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -78,7 +78,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="22dp"
                         android:textColor="@color/coefficients"
-                        android:textSize="21sp"
+                        android:textSize="16sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/x1"
@@ -92,7 +92,7 @@
                         android:text="@string/x"
                         android:textColor="@color/x"
                         android:textStyle="bold"
-                        android:textSize="22sp"
+                        android:textSize="16sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@id/power"
                         app:layout_constraintStart_toEndOf="@+id/base"
@@ -103,7 +103,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="22dp"
                         android:textColor="@color/coefficients"
-                        android:textSize="21sp"
+                        android:textSize="16sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/x2"
@@ -117,7 +117,7 @@
                         android:text="@string/x"
                         android:textColor="@color/x"
                         android:textStyle="bold"
-                        android:textSize="22sp"
+                        android:textSize="16sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@id/local"
                         app:layout_constraintStart_toEndOf="@+id/power"
@@ -128,7 +128,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="22dp"
                         android:textColor="@color/coefficients"
-                        android:textSize="21sp"
+                        android:textSize="16sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/x3"
@@ -142,7 +142,7 @@
                         android:text="@string/x"
                         android:textColor="@color/x"
                         android:textStyle="bold"
-                        android:textSize="22sp"
+                        android:textSize="16sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@id/demage"
                         app:layout_constraintStart_toEndOf="@+id/local"
@@ -153,7 +153,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="22dp"
                         android:textColor="@color/coefficients"
-                        android:textSize="21sp"
+                        android:textSize="16sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/x4"
@@ -167,7 +167,7 @@
                         android:text="@string/x"
                         android:textColor="@color/x"
                         android:textStyle="bold"
-                        android:textSize="22sp"
+                        android:textSize="16sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@id/limit"
                         app:layout_constraintStart_toEndOf="@+id/demage"
@@ -178,7 +178,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="22dp"
                         android:textColor="@color/coefficients"
-                        android:textSize="21sp"
+                        android:textSize="16sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/x5"
@@ -192,7 +192,7 @@
                         android:text="@string/x"
                         android:textColor="@color/x"
                         android:textStyle="bold"
-                        android:textSize="22sp"
+                        android:textSize="16sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@id/age"
                         app:layout_constraintStart_toEndOf="@+id/limit"
@@ -203,7 +203,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="22dp"
                         android:textColor="@color/coefficients"
-                        android:textSize="21sp"
+                        android:textSize="16sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="parent"
@@ -215,8 +215,8 @@
 
                 <ImageView
                     android:id="@+id/drop_image"
-                    android:layout_width="20dp"
-                    android:layout_height="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="end"
                     android:layout_marginTop="30dp"
                     android:layout_marginEnd="20dp"
@@ -225,7 +225,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/expandable_view"
                     android:layout_width="match_parent"
-                    android:layout_height="550dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="80dp"
                     android:visibility="gone"
                     app:layout_constraintEnd_toEndOf="@+id/localCoTitle"
@@ -233,11 +233,11 @@
 
                     <TextView
                         android:id="@+id/baseCo"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="@string/base"
                         android:textColor="@color/black"
-                        android:textSize="22sp"
+                        android:textSize="20sp"
                         android:textStyle="bold"
                         android:layout_marginStart="14dp"
                         android:layout_marginTop="14dp"
@@ -247,20 +247,20 @@
 
                     <TextView
                         android:id="@+id/baseText"
-                        android:layout_width="195dp"
-                        android:layout_height="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="@string/base_text"
-                        android:textSize="16sp"
+                        android:textSize="14sp"
                         android:layout_marginStart="14dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/baseCo" />
 
                     <TextView
                         android:id="@+id/baseName"
-                        android:layout_width="130dp"
-                        android:layout_height="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="@string/base_title"
-                        android:textSize="16sp"
+                        android:textSize="14sp"
                         android:layout_marginTop="18dp"
                         android:layout_marginStart="3dp"
                         app:layout_constraintStart_toEndOf="@id/baseCo"
@@ -268,25 +268,24 @@
 
                     <TextView
                         android:id="@+id/base_coefficient"
-                        android:layout_width="130dp"
-                        android:layout_height="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text=""
                         android:textColor="@color/black"
-                        android:textSize="22sp"
+                        android:textSize="16sp"
                         android:textStyle="bold"
                         android:layout_marginEnd="14dp"
-                        android:layout_marginTop="30dp"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toBottomOf="@id/baseName" />
 
 
                     <TextView
                         android:id="@+id/powerCo"
-                        android:layout_width="35dp"
-                        android:layout_height="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="@string/power"
                         android:textColor="@color/black"
-                        android:textSize="22sp"
+                        android:textSize="20sp"
                         android:textStyle="bold"
                         android:layout_marginStart="14dp"
                         android:layout_marginTop="14dp"
@@ -296,20 +295,20 @@
 
                     <TextView
                         android:id="@+id/powerCoText"
-                        android:layout_width="219dp"
-                        android:layout_height="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="@string/power_text"
-                        android:textSize="16sp"
+                        android:textSize="14sp"
                         android:layout_marginStart="14dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/powerCo" />
 
                     <TextView
                         android:id="@+id/powerName"
-                        android:layout_width="150dp"
-                        android:layout_height="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="@string/power_title"
-                        android:textSize="16sp"
+                        android:textSize="14sp"
                         android:layout_marginStart="3dp"
                         android:layout_marginTop="18dp"
                         app:layout_constraintTop_toBottomOf="@id/baseText"
@@ -317,26 +316,25 @@
 
                     <TextView
                         android:id="@+id/power_coefficient"
-                        android:layout_width="130dp"
-                        android:layout_height="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:gravity="end"
                         android:text=""
                         android:textColor="@color/black"
-                        android:textSize="22sp"
+                        android:textSize="16sp"
                         android:textStyle="bold"
-                        android:layout_marginTop="60dp"
                         android:layout_marginEnd="14dp"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/base_coefficient" />
+                        app:layout_constraintTop_toBottomOf="@id/powerName" />
 
                     <TextView
                         android:id="@+id/localCo"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="@string/local"
                         android:textColor="@color/black"
-                        android:textSize="22sp"
+                        android:textSize="20sp"
                         android:textStyle="bold"
                         android:layout_marginStart="14dp"
                         android:layout_marginTop="14dp"
@@ -346,20 +344,20 @@
 
                     <TextView
                         android:id="@+id/localText"
-                        android:layout_width="210dp"
-                        android:layout_height="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="@string/local_text"
-                        android:textSize="16sp"
+                        android:textSize="14sp"
                         android:layout_marginStart="14dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/localCo" />
 
                     <TextView
                         android:id="@+id/localName"
-                        android:layout_width="204dp"
-                        android:layout_height="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="@string/local_title"
-                        android:textSize="16sp"
+                        android:textSize="14sp"
                         android:layout_marginStart="3dp"
                         android:layout_marginTop="18dp"
                         app:layout_constraintTop_toBottomOf="@id/powerCoText"
@@ -367,26 +365,25 @@
 
                     <TextView
                         android:id="@+id/local_coefficient"
-                        android:layout_width="120dp"
-                        android:layout_height="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:gravity="end"
                         android:text=""
                         android:textColor="@color/black"
-                        android:textSize="22sp"
+                        android:textSize="16sp"
                         android:textStyle="bold"
-                        android:layout_marginTop="60dp"
                         android:layout_marginEnd="14dp"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/power_coefficient"/>
+                        app:layout_constraintTop_toBottomOf="@id/localName"/>
 
                     <TextView
                         android:id="@+id/demageCo"
-                        android:layout_width="50dp"
-                        android:layout_height="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="@string/demage"
                         android:textColor="@color/black"
-                        android:textSize="22sp"
+                        android:textSize="20sp"
                         android:textStyle="bold"
                         android:layout_marginStart="14dp"
                         android:layout_marginTop="14dp"
@@ -396,20 +393,20 @@
 
                     <TextView
                         android:id="@+id/demageText"
-                        android:layout_width="232dp"
-                        android:layout_height="60dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="@string/demage_text"
-                        android:textSize="16sp"
+                        android:textSize="14sp"
                         android:layout_marginStart="14dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/demageCo" />
 
                     <TextView
                         android:id="@+id/demageName"
-                        android:layout_width="192dp"
-                        android:layout_height="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="@string/demage_title"
-                        android:textSize="16sp"
+                        android:textSize="14sp"
                         android:layout_marginStart="3dp"
                         android:layout_marginTop="18dp"
                         app:layout_constraintTop_toBottomOf="@id/localText"
@@ -417,26 +414,25 @@
 
                     <TextView
                         android:id="@+id/demage_coefficient"
-                        android:layout_width="110dp"
-                        android:layout_height="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:gravity="end"
                         android:text=""
                         android:textColor="@color/black"
-                        android:textSize="22sp"
+                        android:textSize="16sp"
                         android:textStyle="bold"
-                        android:layout_marginTop="60dp"
                         android:layout_marginEnd="14dp"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/local_coefficient"/>
+                        app:layout_constraintTop_toBottomOf="@id/demageName"/>
 
                     <TextView
                         android:id="@+id/ageCo"
-                        android:layout_width="43dp"
-                        android:layout_height="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="@string/age"
                         android:textColor="@color/black"
-                        android:textSize="22sp"
+                        android:textSize="20sp"
                         android:textStyle="bold"
                         android:layout_marginStart="14dp"
                         android:layout_marginTop="14dp"
@@ -446,20 +442,20 @@
 
                     <TextView
                         android:id="@+id/ageCoText"
-                        android:layout_width="227dp"
-                        android:layout_height="60dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="@string/age_text"
-                        android:textSize="16sp"
+                        android:textSize="14sp"
                         android:layout_marginStart="14dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/ageCo" />
 
                     <TextView
                         android:id="@+id/ageName"
-                        android:layout_width="172dp"
-                        android:layout_height="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="@string/age_title"
-                        android:textSize="16sp"
+                        android:textSize="14sp"
                         android:layout_marginStart="3dp"
                         android:layout_marginTop="18dp"
                         app:layout_constraintTop_toBottomOf="@id/demageText"
@@ -467,26 +463,25 @@
 
                     <TextView
                         android:id="@+id/age_coefficient"
-                        android:layout_width="130dp"
-                        android:layout_height="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:gravity="end"
                         android:text=""
                         android:textColor="@color/black"
-                        android:textSize="22sp"
+                        android:textSize="16sp"
                         android:textStyle="bold"
-                        android:layout_marginTop="60dp"
                         android:layout_marginEnd="14dp"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/demage_coefficient"/>
+                        app:layout_constraintTop_toBottomOf="@id/ageName"/>
 
                     <TextView
                         android:id="@+id/limitCo"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="@string/limit"
                         android:textColor="@color/black"
-                        android:textSize="22sp"
+                        android:textSize="20sp"
                         android:textStyle="bold"
                         android:layout_marginStart="14dp"
                         android:layout_marginTop="14dp"
@@ -496,20 +491,20 @@
 
                     <TextView
                         android:id="@+id/limitCoText"
-                        android:layout_width="244dp"
-                        android:layout_height="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="@string/limit_text"
-                        android:textSize="16sp"
+                        android:textSize="14sp"
                         android:layout_marginStart="14dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/limitCo" />
 
                     <TextView
                         android:id="@+id/limitName"
-                        android:layout_width="170dp"
-                        android:layout_height="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="@string/limit_title"
-                        android:textSize="16sp"
+                        android:textSize="14sp"
                         android:layout_marginStart="3dp"
                         android:layout_marginTop="18dp"
                         app:layout_constraintTop_toBottomOf="@id/ageCoText"
@@ -517,27 +512,27 @@
 
                     <TextView
                         android:id="@+id/limit_coefficient"
-                        android:layout_width="110dp"
-                        android:layout_height="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:gravity="end"
                         android:text=""
                         android:textColor="@color/black"
-                        android:textSize="22sp"
+                        android:textSize="16sp"
                         android:textStyle="bold"
                         android:layout_marginBottom="30dp"
                         android:layout_marginEnd="14dp"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"/>
+                        app:layout_constraintTop_toBottomOf="@id/limitName"/>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.cardview.widget.CardView>
 
-            <RelativeLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/forms"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="470dp"
                 android:layout_marginStart="14dp"
                 android:layout_marginEnd="14dp"
                 android:layout_marginTop="25dp"
@@ -548,90 +543,178 @@
                 <ImageView
                     android:id="@+id/formImage"
                     android:layout_width="match_parent"
-                    android:layout_height="470dp"
+                    android:layout_height="wrap_content"
                     android:scaleType="fitXY"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:srcCompat="@drawable/form" />
 
 
                 <TextView
-                    android:id="@+id/city"
+                    android:id="@+id/cityForm"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="23dp"
-                    android:layout_marginTop="25dp"
-                    android:layout_marginEnd="23dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="14dp"
                     android:background="@drawable/shape"
-                    android:onClick="createCityDialog"
+                    android:onClick="showCityDialog"
                     android:text="@string/city"
-                    android:maxLines="2"
-                    android:textSize="18sp" />
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/carHP"
+                    android:id="@+id/newFormCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="14dp"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    android:textSize="22sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+
+                <TextView
+                    android:id="@+id/powerForm"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="23dp"
-                    android:layout_marginTop="97dp"
-                    android:layout_marginEnd="23dp"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="14dp"
                     android:background="@drawable/shape"
-                    android:onClick="createPowerDialog"
+                    android:textSize="15sp"
                     android:text="@string/carHp"
-                    android:textSize="18sp" />
+                    android:onClick="showPowerDialog"
+                    app:layout_constraintTop_toBottomOf="@+id/cityForm"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/newFormPower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="14dp"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    android:textSize="22sp"
+                    app:layout_constraintTop_toBottomOf="@+id/cityForm"
+                    app:layout_constraintStart_toStartOf="parent"/>
 
                 <TextView
-                    android:id="@+id/drivers"
+                    android:id="@+id/driversForm"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="23dp"
-                    android:layout_marginTop="169dp"
-                    android:layout_marginEnd="23dp"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="14dp"
                     android:background="@drawable/shape"
-                    android:onClick="createDriversDialog"
+                    android:textSize="15sp"
                     android:text="@string/drivers"
-                    android:textSize="18sp" />
+                    android:onClick="showDriversDialog"
+                    app:layout_constraintTop_toBottomOf="@id/powerForm"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/newFormDrivers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="14dp"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    android:textSize="22sp"
+                    app:layout_constraintTop_toBottomOf="@id/powerForm"
+                    app:layout_constraintStart_toStartOf="parent"/>
 
                 <TextView
-                    android:id="@+id/youngestDriver"
+                    android:id="@+id/youngestDriverForm"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="23dp"
-                    android:layout_marginTop="241dp"
-                    android:layout_marginEnd="23dp"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="14dp"
                     android:background="@drawable/shape"
-                    android:onClick="createYoungestDriverDialog"
+                    android:textSize="15sp"
                     android:text="@string/youngestDriver"
-                    android:textSize="18sp" />
+                    android:onClick="showYoungestDriverDialog"
+                    app:layout_constraintTop_toBottomOf="@+id/driversForm"
+                    app:layout_constraintStart_toStartOf="parent" />
+                <TextView
+                    android:id="@+id/newFormYoungestDriver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="14dp"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    android:textSize="22sp"
+                    app:layout_constraintTop_toBottomOf="@+id/driversForm"
+                    app:layout_constraintStart_toStartOf="parent" />
 
                 <TextView
-                    android:id="@+id/minExperience"
+                    android:id="@+id/minExperienceForm"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="23dp"
-                    android:layout_marginTop="313dp"
-                    android:layout_marginEnd="23dp"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="14dp"
                     android:background="@drawable/shape"
-                    android:onClick="createMinExperienceDialog"
+                    android:textSize="15sp"
                     android:text="@string/minExperience"
-                    android:textSize="18sp" />
+                    android:onClick="showMinExperienceDialog"
+                    app:layout_constraintTop_toBottomOf="@+id/youngestDriverForm"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/newFormMinExperience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="14dp"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    android:textSize="22sp"
+                    app:layout_constraintTop_toBottomOf="@+id/youngestDriverForm"
+                    app:layout_constraintStart_toStartOf="parent"/>
 
                 <TextView
-                    android:id="@+id/yearsWithoutAccident"
+                    android:id="@+id/yearsWithoutAccidentForm"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="23dp"
-                    android:layout_marginTop="385dp"
-                    android:layout_marginEnd="23dp"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="14dp"
                     android:background="@drawable/shape"
-                    android:onClick="createYearsNoAccidentsDialog"
+                    android:textSize="15sp"
                     android:text="@string/yearsNoAccident"
-                    android:textSize="18sp" />
-            </RelativeLayout>
+                    android:onClick="showYearsWithoutAccidentDialog"
+                    app:layout_constraintTop_toBottomOf="@+id/minExperienceForm"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/newFormYearsWithoutAccident"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="14dp"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    android:textSize="22sp"
+                    app:layout_constraintTop_toBottomOf="@+id/minExperienceForm"
+                    app:layout_constraintStart_toStartOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
 
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/bottom_layout"
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -644,6 +727,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/background" />
 
         <Button
@@ -656,8 +743,10 @@
             android:textStyle="bold"
             android:background="@drawable/button_main_shape"
             android:enabled="false"
-            android:hint="@string/button_string" />
+            android:hint="@string/button_string"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
-    </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

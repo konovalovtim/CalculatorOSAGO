@@ -5,12 +5,9 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitClient {
     var retrofit: Retrofit = Retrofit.Builder()
-        .baseUrl("http://mock.sravni-team.ru/mobile/internship/v1/")
+        .baseUrl("http://mock.sravni-team.ru/mobile/internship/v1/osago/")
         .addConverterFactory(GsonConverterFactory.create())
         .build()
     var service = retrofit.create(RetrofitServices::class.java)
-
-
-
 
 }
